@@ -73,7 +73,7 @@ Invalid encounters should include a key with the specific error.
 }
 ```
 
-Here's an example project file  [[https://github.com/BivarusInc/introductory-project/blob/master/example.rb]] with this data.  You can use it as the basis of your solution, or start your own.
+Here's an [example project file!](https://github.com/BivarusInc/introductory-project/blob/master/example.rb) with this data.  You can use it as the basis of your solution, or start your own.  You can fork this repository, and change it as appropriate.
 
 *Bonus:* create some test cases with more than one error.  For example an encounter might not have an email, and also have a bad DRG.  The invalid encounter's error key should then be an array containing a list of errors, instead of a single error.
 
