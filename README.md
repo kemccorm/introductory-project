@@ -17,9 +17,9 @@ Don’t feel compelled to excessively comment your code, or to invest an extreme
 
 ## Background:
 
-Bivarus helps customers measure and improve patient experience at health care providers.  So how do we measure a patient's experience?  One of the key ways we do that is by surveying patients.
+Bivarus helps customers measure and improve patient experience at health care providers.  So how do we measure a patient experience?  One of the key ways we do this is by surveying patients after they visit one of our customers.
 
-The first step of this process is getting patient data from our customers.  Our customers (hospitals, clinics, etc) send us *encounters*.  An encounter is a single visit to a healthcare provider, between one patient, and one or more staff members.
+Before we can survey the patient, however, we have to get the patient data from our customers.  Our customers (hospitals, clinics, etc) periodically send us a set of *encounters*.  An encounter is a single visit to a healthcare provider, between one patient, and one or more staff members.
 
 Here is a simplified encounter, as a Ruby hash:
 
