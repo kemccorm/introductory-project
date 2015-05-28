@@ -23,7 +23,7 @@ Before we can survey the patient, however, we have to get the patient data from 
 
 Here is a simplified encounter, as a Ruby hash:
 
-```
+```ruby
 {email: 'john@example.com', age: 32, drg: 100}
 ```
 
@@ -44,7 +44,7 @@ For this exercise you will create Ruby class(es) that accept an array of encount
 
 So given the following test data:
 
-```
+```ruby
 [
   {email: 'alice@example.com', age: 32, drg: 100}, // valid encounter
   {email: 'sam@example.com', age: 32, drg: 200},   // rejected, bad drg
@@ -58,7 +58,7 @@ So given the following test data:
 Your class/object should return a hash of valid and invalid encounters.
 Invalid encounters should include a key with the specific error.
 
-```
+```ruby
 {
   valid: [
     {email: 'alice@example.com', age: 32, drg: 100},
