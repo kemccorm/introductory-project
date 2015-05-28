@@ -19,7 +19,7 @@ Don’t feel compelled to excessively comment your code, or to invest an extreme
 
 Bivarus helps customers measure and improve patient experience at health care providers.  So how do we measure a patient's experience?  One of the key ways we do that is by surveying patients.
 
-The first step of the process of surveying is getting patient data from our customers.  Our customers (hospitals, clinics, etc) send us "encounters".  An encounter is a single visit to a healthcare provider, between one patient, and one or more staff members.
+The first step of the process of surveying is getting patient data from our customers.  Our customers (hospitals, clinics, etc) send us *encounters*.  An encounter is a single visit to a healthcare provider, between one patient, and one or more staff members.
 
 After receiving a set of encounters, we normalize the data contained in them, and send surveys to the patient that was associated with each encounter.
 
@@ -45,6 +45,8 @@ Rules:
 - patients previously seen (based on their email) should be rejected.  Only consider duplicates in regards to the encounters in the current batch you're processing.  Don't worry about what happens for batch + 1
 
 So given the following test data:
+
+```
 [
   {email: 'alice@example.com', age: 32, drg: 100}, // valid encounter
   {email: 'sam@example.com', age: 32, drg: 200},   // rejected, bad drg
@@ -53,10 +55,12 @@ So given the following test data:
   {email: 'bob@example.com', age: 17, drg: 100},   // rejected, too young
   {email: 'mallet@example.com', age: 20, drg: 500} // valid encounter
 ]
+```
 
 Your class/object should return a hash of valid and invalid encounters.
 Invalid encounters should include a key with the specific error.
 
+```
 {
   valid: [
     {email: 'alice@example.com', age: 32, drg: 100},
@@ -69,10 +73,11 @@ Invalid encounters should include a key with the specific error.
     {email: 'bob@example.com', age: 17, drg: 100, error: 'too young'}
   ]
 }
+```
 
-Bonus: create some test cases with more than one error.  For example an encounter might not have an email, and also have a bad DRG.  The invalid encounter's error key should then be an array containing a list of errors, instead of a single error.
+*Bonus:* create some test cases with more than one error.  For example an encounter might not have an email, and also have a bad DRG.  The invalid encounter's error key should then be an array containing a list of errors, instead of a single error.
 
-Bonus: create unit tests for key methods in your class, using the framework of your choice
+*Bonus:* create unit tests for key methods in your class, using the framework of your choice
 
 
 
