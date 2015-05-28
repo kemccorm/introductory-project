@@ -7,7 +7,7 @@ This project will introduce you to Bivarus and give you some background on some 
 The deliverables for the project are:
 
  - Ruby code (either as a text file or a Git repo)
- - A conversation after
+ - A conversation describing it
 
 *Your code should use plain old Ruby classes and OOP (i.e. it should not depend on Rails or ActiveModel).*
 
