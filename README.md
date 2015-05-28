@@ -31,13 +31,13 @@ Here is a simplified encounter, as a Ruby hash:
 
 This indicates john@example.com showed up at a customer site and was treated.  At the time of the encounter they were 32 years old.  DRG is a code indicating the procedure the customer had during their visit.
 
-Instructions:
+## Instructions:
 
 Not all encounters we receive from customers are valid.
 
 For this exercise you will create Ruby class(es) that accept an array of encounter hashes, and rejects invalid encounters based on their attributes.
 
-Rules:
+### Rules:
 
 - patients with a DRG code of 200 should be rejected
 - patients under the age of 18 should be rejected
