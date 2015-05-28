@@ -9,7 +9,7 @@ The deliverables for the project are:
  - Ruby code (either as a text file or a Git repo)
  - A conversation after
 
-*Your code should use plain old Ruby classes and OOP (i.e. it’s not Rails, Active Model).*
+*Your code should use plain old Ruby classes and OOP (i.e. it should not depend on Rails or ActiveModel).*
 
 Here’s a refresher on OOP SOLID: https://www.groupbuddies.com/posts/19-solid-principles-in-ruby
 
@@ -19,9 +19,7 @@ Don’t feel compelled to excessively comment your code, or to invest an extreme
 
 Bivarus helps customers measure and improve patient experience at health care providers.  So how do we measure a patient's experience?  One of the key ways we do that is by surveying patients.
 
-The first step of the process of surveying is getting patient data from our customers.  Our customers (hospitals, clinics, etc) send us *encounters*.  An encounter is a single visit to a healthcare provider, between one patient, and one or more staff members.
-
-After receiving a set of encounters, we normalize the data contained in them, and send surveys to the patient that was associated with each encounter.
+The first step of this process is getting patient data from our customers.  Our customers (hospitals, clinics, etc) send us *encounters*.  An encounter is a single visit to a healthcare provider, between one patient, and one or more staff members.
 
 Here is a simplified encounter, as a Ruby hash:
 
