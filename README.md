@@ -1,4 +1,4 @@
-# Bivarus Code Project
+# Bivarus Introductory Project
 
 ## Guidance:
 
