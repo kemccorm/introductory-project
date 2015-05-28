@@ -1,4 +1,4 @@
-=== Background:
+# Background:
 
 Bivarus helps customers measure and improve patient experience at health care providers.  So how do we measure a patient's experience?  One of the key ways we do that is by surveying patients.
 
